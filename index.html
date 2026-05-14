@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo Garcilaso del Cusco</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header>
+       
+        <img src="logo2.png" alt="Logo Secundario" class="logo-header">
+        
+        <div class="logo-container">
+            <h1>Deportivo Garcilaso Cusco</h1>
+            <p>El "Pedacito de Cielo" del Cusco</p>
+        </div>
+        
+
+        <img src="logo.png" alt="Logo Principal Garcilaso" class="logo-header">
+    </header>
+
+    <!-- 2. NAV -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#clasico">El Clásico</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. MAIN -->
+    <main id="inicio">
+        
+        <!-- 4. SECTION -->
+        <section>
+            <h2>Nuestra Historia y Actualidad</h2>
+            
+        
+            <article class="tarjeta-info" id="historia">
+                <h3>Orígenes en la G.U.E. Inca Garcilaso</h3>
+                <p>El club fue fundado el <time datetime="1957-10-24">24 de octubre de 1957</time> por estudiantes de la Gran Unidad Escolar Inca Garcilaso de la Vega. Llevamos con orgullo los colores celeste y blanco.</p>
+                <p>Somos conocidos como el <mark>Vendaval Celeste</mark>, representando la pasión de la región cusqueña.</p>
+                
+                <details>
+                    <summary>Ver Palmarés Destacado</summary>
+                    <ul>
+                        <li>Campeón de la Copa Perú (2022)</li>
+                        <li>Ascenso a la Liga 1 Profesional</li>
+                        <li>Participación en la Copa Sudamericana (2024)</li>
+                    </ul>
+                </details>
+            </article>
+
+          
+            <article class="tarjeta-info" id="galeria">
+                <h3>Galería del Vendaval</h3>
+                <p>Imágenes exclusivas del equipo y nuestra fiel hinchada:</p>
+                <br>
+                
+                <div class="carrusel-contenedor">
+                    <div class="carrusel-slider">
+                        
+                        <img src="galeria1.jpg" alt="Jugadores del Garcilaso">
+                        <img src="galeria2.jpg" alt="Hinchada Celeste">
+                        <img src="galeria3.jpg" alt="Estadio Inca Garcilaso">
+                        <img src="galeria4.jpg" alt="Equipo Titular">
+                    </div>
+                </div>
+            </article>
+
+         
+            <article class="tarjeta-info" id="clasico">
+                <h3>El Clásico Cusqueño</h3>
+                <p>El rival histórico del Deportivo Garcilaso es el <strong>Cienciano del Cusco</strong>. Este enfrentamiento es el auténtico Clásico Cusqueño, un partido que paraliza a la ciudad imperial y divide a la afición entre celestes y rojos en el Estadio Garcilaso de la Vega.</p>
+                
+                <figure>
+                    <iframe width="100%" height="315" src="https://youtu.be/taZ_ZT4jLrg?si=etdQ638D28TetcO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Victoria histórica del Vendaval Celeste frente al Cienciano del Cusco.</figcaption>
+                </figure>
+            </article>
+
+            <!-- contacto -->
+            <article class="tarjeta-info" id="contacto">
+                <h3>Únete a la Hinchada (Contacto)</h3>
+                <p>Déjanos tus datos para recibir noticias del club:</p>
+                <br>
+                <form action="#" method="post" class="formulario-club">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Israel Quispitupa">
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+
+                    <label for="mensaje">Mensaje de aliento:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¡Arriba el pedacito de cielo!"></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </article>
+        </section>
+
+        <aside id="estadisticas">
+            <h3>Próximo Partido</h3>
+            <div class="caja-partido">
+                <p><strong>Deportivo Garcilaso vs. Cienciano</strong></p>
+                <p>Estadio Inca Garcilaso de la Vega</p>
+                <p>Cusco, Perú</p>
+            </div>
+            
+            <h3>Patrocinadores Oficiales</h3>
+            <div class="patrocinadores-lista">
+                <img src="sponsor.webp" alt="Patrocinador 1 Caja Cusco">
+                <br>
+                <img src="sponsor2.jpg" alt="Patrocinador 2 Marca Deportiva">
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Club Deportivo Garcilaso del Cusco.</p>
+        <p>Primer Examen Parcial de Programación Web.</p>
+        <p>Desarrollado por: <strong>Israel Faraón Quispitupa Ccama</strong></p>
+    </footer>
+
+</body>
+</html>

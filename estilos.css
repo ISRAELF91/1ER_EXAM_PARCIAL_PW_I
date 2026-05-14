@@ -1,0 +1,260 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER: Flexbox para alinear logos y título */
+header {
+    background-color: #00bfff; /* Celeste Garcilaso */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 5px solid #005f99;
+}
+
+/* Reducción del tamaño de los logos a pequeño (60px) */
+.logo-header {
+    width: 60px; 
+    height: auto;
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.logo-container {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.logo-container h1 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* NAV: Menú de navegación */
+nav {
+    background-color: #005f99;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #00bfff;
+}
+
+/* MAIN: Flexbox para layout principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* SECTION */
+section {
+    flex: 3;
+    min-width: 300px;
+}
+
+section h2 {
+    color: #005f99;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00bfff;
+    padding-bottom: 5px;
+}
+
+/* ARTICLE: Tarjetas de información */
+article.tarjeta-info {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+article h3 {
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+/* ETIQUETAS SEMÁNTICAS (Mark, Time, Details, Summary) */
+mark {
+    background-color: #cceeff;
+    color: #005f99;
+    font-weight: bold;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+time {
+    font-style: italic;
+    color: #555;
+    font-weight: bold;
+}
+
+details {
+    margin-top: 20px;
+    background-color: #e6f7ff;
+    padding: 10px 15px;
+    border-left: 4px solid #00bfff;
+    border-radius: 4px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #005f99;
+}
+
+details ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* FIGURE, FIGCAPTION e IFRAME (YouTube) */
+figure {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* FORMULARIO DE CONTACTO */
+.formulario-club {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-club input, 
+.formulario-club textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.formulario-club button {
+    background-color: #005f99;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.formulario-club button:hover {
+    background-color: #00bfff;
+}
+
+/* ASIDE: Barra lateral (Patrocinadores y Próximo Partido) */
+aside {
+    flex: 1;
+    min-width: 250px;
+    background-color: #e6f7ff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+aside h3 {
+    color: #005f99;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.caja-partido {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #b3e6ff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.patrocinadores-lista {
+    text-align: center;
+}
+
+.patrocinadores-lista img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsividad para Móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo-container h1 {
+        font-size: 1.8rem; /* Título más pequeño en móviles */
+    }
+    main {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
